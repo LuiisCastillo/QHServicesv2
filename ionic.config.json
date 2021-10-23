@@ -1,0 +1,7 @@
+{
+  "name": "HQServices",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

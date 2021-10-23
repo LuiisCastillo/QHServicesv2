@@ -1,0 +1,53 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button autoHide="false"></ion-menu-button>
+        </ion-buttons>
+        <ion-title color="primary">Rayos X</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list>
+
+        <ion-list-header>
+            <h3>Cola de Rayos X</h3>
+        </ion-list-header>
+
+        <ion-item lines="inset" *ngFor="let nombres of nombres">
+            <ion-label color="primary">
+                <h5>{{nombres.nombre}} - ({{nombres.rol}}, {{nombres.estado}})</h5>
+            </ion-label>
+
+        </ion-item>
+    </ion-list>
+
+    <select>
+      <option>Alderaan</option>
+      <option selected="">Dagobah</option>
+      <option>Felucia</option>
+      <option>Geonosis </option>
+      <option>Hoth</option>
+      <option>Kamino</option>
+      <option>Mygeeto</option>
+      <option>Naboo</option>
+      <option>Tataouine</option>
+      <option>Utapau</option>
+      <option>Yavin</option>
+    </select>
+
+    <ion-card>
+        <ion-card-header>
+
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            <ion-img [src]="aseest/image/android.jpg"></ion-img>
+            <ion-card-title>Card Title</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+            Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean.
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>
