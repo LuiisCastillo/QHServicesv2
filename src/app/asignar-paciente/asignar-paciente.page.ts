@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class AsignarPacientePage implements OnInit {
 id: any;
-estado:any;
+estado_sono:any;
 
 
 
@@ -25,11 +25,12 @@ estado:any;
       this.getPaciente(this.id);})
 
    }
+   
   addSonografia(){
     {
       let data = {
     id: this.id,
-    estado: this.estado,
+    estado_sono: this.estado_sono,
  
         }
         this._apiservice.addSonografia(data).subscribe((res:any) => {
